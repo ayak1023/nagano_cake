@@ -6,14 +6,14 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <script src="https://kit.fontawesome.com/8cc2529ef7.js" crossorigin="anonymous"></script>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+
   </head>
 
-  <body>
-    <header>
-      <div class="mb-3">
-        <navi class="navbar navbar-expand-lg navi_area text-right">
+  <body class="d-flex flex-column vh-100">
+    <header class="mb-3">
+        <nav class="navbar navbar-expand-lg navi_area text-right">
             <div class="container">
               <%= link_to "Nagano Cake", root_path, class: "navbar-brand" %>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -33,8 +33,7 @@
                 </ul>
               </div>
             </div>
-        </navi>
-      </div>
+        </nav>
     </header>
     <%= yield %>
   </body>

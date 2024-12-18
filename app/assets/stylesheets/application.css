@@ -1,15 +1,154 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
+
+/* reset --------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+html {
+  font: 100%/1.5 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none!important;
+  color: #6c6b6b;
+}
+
+a:hover{
+  color: #6c6b6b;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1{
+  font-size: 2.2em;
+}
+
+h2{
+  font-size: 2em;
+}
+
+h3{
+  font-size: 1.8em;
+}
+
+body {
+  color: #2d3133;
+  margin: 0;
+  padding-top: 5em;
+}
+
+/*navi--------------------------------------------*/
+.navi_area{
+  color: #2d3133;
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
+.navi_area ul li {
+  font-size:1.1em;
+  margin-right: 1em;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+.navbar-collapse{
+  z-index: 1050;
+}
+
+.main_content{
+  z-index: 1;
+  position: relative;
+}
+
+.nav_mr{
+  margin-right: 13em;
+}
+
+
+/*---responsive-----------------------------------------*/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .nav_mr{
+    margin-right: 2.5em;
+  }
+}
+
+@media (min-width: 767.99px) and (max-width: 991px) {
+  .nav_mr{
+    margin-right: 0em;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  h1{
+  font-size: 1.8em;
+  }
+
+  h2{
+    font-size: 1.6em;
+  }
+
+  h3{
+    font-size: 1.4em;
+  }
+
+  .nav_mr{
+    margin-right: 0;
+  }
+
+  .search_form{
+    padding:.1em .5em;
+    background-color: #fff;
+  }
+
+  .search_word{
+    padding:0 .1em;
+    border-left: none;
+  }
+
+  .search_area_mobile{
+    padding: 1em;
+    text-align: center;
+  }
+
+  .profile_img{
+    width:80px;
+    height: 80px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  h1{
+  font-size: 1.6em;
+  }
+
+  h2{
+    font-size: 1.4em;
+  }
+
+  h3{
+    font-size: 1.2em;
+  }
+}
