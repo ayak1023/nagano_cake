@@ -11,30 +11,35 @@
 
   </head>
 
-  <body class="d-flex flex-column vh-100">
-    <header class="mb-3">
-        <nav class="navbar navbar-expand-lg navi_area text-right">
-            <div class="container">
+  <body>
+    <header>
+        <nav>
               <%= link_to "Nagano Cake", root_path, class: "navbar-brand" %>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav ml-4">
-                  <li class="nav-item">
+              <div class="navbar-nav">
+                <ul>
+                  <li class="navbar-item">
                     <%= link_to "About", about_path, class: "nav-link nav_mr" %>
                   </li>
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <%= link_to "商品一覧", about_path, class: "nav-link nav_mr" %>
                   </li>
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <%= link_to "新規登録", about_path, class: "nav-link nav_mr" %>
                   </li>
-                  <li class="nav-item">
-                    <%= link_to "会員登録", about_path, class: "nav-link nav_mr" %>
+                  <li class="navbar-item">
+                    <%= link_to "会員登録", about_path, class: "nav-link" %>
                   </li>
                 </ul>
               </div>
-            </div>
         </nav>
     </header>
-    <%= yield %>
+    <div class="main">
+      <%= yield %>
+    </div>
+    <footer>
+      <div class="footer-var">
+        <p class="footer-content">Copyright © 2024 Nagano Cake.</p>
+      </div>
+    </footer>
   </body>
 </html>
