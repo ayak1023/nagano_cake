@@ -128,6 +128,28 @@ nav{
   position: relative;
 }
 
+.flex-row{
+  display: flex;
+}
+
+.side_genre{
+  width:250px;
+  margin-right: 20px;
+}
+.top_intro{
+  width:834px;
+}
+.new_product{
+  padding: 10px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.mt_40px{
+  margin-top: 40px;
+}
+
 footer{
   position: sticky;
   top: 100vh;
